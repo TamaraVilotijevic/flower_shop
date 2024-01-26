@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Select Flowers:</h2>
+            <input type="number" class="input_field" name="rose" id="rose" min="0" placeholder="Price per flower is 150 RSD"> Roses &#127801;<br>
+            <input type="number" class="input_field" name="lily" id="lily" min="0" placeholder="Price per flower is 120 RSD"> Lilies &#127800;<br>
+            <input type="number" class="input_field" name="gerbera" id="gerbera" min="0" placeholder="Price per flower is 70 RSD"> Gerberas &#127804;<br>
+
+            <h2>Additional Gifts:</h2>
+            <input type="checkbox" name="gift1" id="gift1" value="chocolate_box">Chocolate Box &#127852;<br>
+            <input type="checkbox" name="gift2" id="gift2" value="chocolate">Chocolate &#127851;<br>
+            <input type="checkbox" name="gift3" id="gift3" value="champagne">Champagne &#127870;<br>
+
+            <h2>Payment:</h2>
+            <input type="radio" name="payment" id="cash" checked>Cash &#128184;<br>
+            <input type="radio" name="payment" id="card">Card &#128179;<br>
+            <input type="button" class="input_field button" id="calculate" value="Calculate">
+            <input type="reset" class="input_field button" id="reset" value="Reset">
+        </form>
+        
+        <h2>Your Order:</h2>
+        <div id="roseOutput"></div>
+        <div id="lilyOutput"></div>
+        <div id="gerberaOutput"></div>
+        <div id="giftOutput"></div>
+        <div id="priceOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
